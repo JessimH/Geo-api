@@ -38,7 +38,7 @@
         class="error">{{error}}</div>
       <div 
         v-if="succes > 0"
-        class="succes">{{succes}} résultats</div>
+        class="succes">{{succes}}</div>
       <div>
         <div v-if="loading">
           <Loading/>
@@ -91,7 +91,7 @@ export default  {
       .then(data => {
           console.log(data.length)
           this.citys = data
-          this.succes = this.citys.length
+          this.citys.length > 1 ? this.succes = `${this.citys.length} résultats` : this.succes = `${this.citys.length} résultat`
           this.error = ""
           this.loading = false
           if(this.citys.length === 0){

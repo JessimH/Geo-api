@@ -35,7 +35,7 @@
       </ion-toolbar>
       <div 
         v-if="succes > 0"
-        class="succes">{{succes}} résultats</div>
+        class="succes">{{succes}}</div>
       <div>
         <div v-if="loading">
           <Loading />
@@ -87,7 +87,7 @@ export default  {
       .then(data => {
           console.log(data)
           this.departements = data
-          this.succes = this.departements.length
+          this.citys.length > 1 ? this.succes = `${this.citys.length} résultats` : this.succes = `${this.citys.length} résultat`
           this.loading = false
       })
     },
