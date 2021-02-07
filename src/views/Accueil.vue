@@ -13,7 +13,7 @@
         <p>Toutes ses informations nous sont fournis par
           <a target="_blank" href="https://geo.api.gouv.fr/decoupage-administratif">l'API officiel du gouvernement français</a>
         </p>
-        <p>Bonne recherches a tous!</p>
+        <p>Bonne recherches a tous!!</p>
       </div>
     </ion-content>
   </ion-page>
