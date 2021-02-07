@@ -1,0 +1,7 @@
+{
+  "name": "geo-api",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
